@@ -1,0 +1,32 @@
+nav{
+display: flex;
+background-color: coral;
+padding: 10px;
+margin-bottom: 10px;
+width: 388.2px;
+
+}
+nav a {
+    display: block;
+    margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+ul{
+    line-height: 2;
+}
+
+img{
+    width: 388.2px;
+    height: 258.4px;
+}
+
+.line{
+    padding: 1px 0;
+}
+
+h2{
+    padding: 10px;
+}
+
