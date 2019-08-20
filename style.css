@@ -1,0 +1,11 @@
+.blueCard{
+    height: 200px;
+    width: 200px;
+    background: rgba(4, 4, 245, 0.479);
+}
+
+.redCard{
+    height: 200px;
+    width: 200px;
+    background: rgba(255, 0, 0, 0.452);
+}
