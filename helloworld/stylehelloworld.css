@@ -1,0 +1,18 @@
+.headingOne{
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+.headingTwo{
+    font-family: 'Oswald', sans-serif;
+    color: blue;
+}
+
+.headingThree{
+    font-family: 'Lobster', cursive;
+}
+
+.headingFour{
+    font-family: 'Beth Ellen', cursive;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
