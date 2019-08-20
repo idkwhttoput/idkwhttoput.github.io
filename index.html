@@ -5,24 +5,27 @@
         <meta name="viewport" content="width=device-width">
         <title>My Resume Website</title>
         <link rel = 'stylesheet' href = 'stylesheet.css'> 
-        <link rel="icon" href="C:\Users\pctapresentation\Desktop\perezesteban-resume\img\favicon.jpg">
+        <link rel="icon" href="C:\Users\pctapresentation\Desktop\perezesteban-resume\html img\logo.png">
     </head>        
         <body>
           
 <header>
 
-<img src="C:\Users\pctapresentation\Desktop\perezesteban-resume\img\christopher-gower-m_HRfLhgABo-unsplash.jpg" alt= "Computer coding"  title="Computer coding"> 
+<div class="imgView">
+  <img src="C:\Users\pctapresentation\Desktop\perezesteban-resume\html img\christopher-gower-m_HRfLhgABo-unsplash.jpg" alt= "Computer coding"  title="Computer coding"> 
+</div>
 
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">LINKS</button>
+  <button onclick="myFunction()" class="dropbtn"></button>
   <div id="myDropdown" class="dropdown-content">
     <nav>
-    <a href="C:\Users\pctapresentation\Desktop\perezesteban-resume\assets\print cv.pdf" target="_blank">View PDF Resume</a>
-    <a href="estebanperez.github.io" target="_blank">GitHub</a>
-    <a href="mailto:esteban_p@live.com" target="_blank">Send Email</a>
-   </nav>
-  </div>
 
+      <a href="C:\Users\pctapresentation\Desktop\perezesteban-resume\assets2\print cv.pdf">View PDF Resume</a>
+      <a href="estebanperez.github.io">GitHub</a>
+      <a href="mailto:esteban_p@live.com">Send Email</a>
+      
+    </nav>
+  </div>
 </div>
 
 <script>
@@ -47,29 +50,27 @@ window.onclick = function(event) {
 }
 </script>
 
-</header> 
-
-<div class="headingSpace">
 <h1> Esteban A. Perez</h1>
 <h3> <a href="tel:401-451-7490">401-451-7490</a>| <a href="mailto:esteban_p@live.com">esteban_p@live.com</a> </h3>
-</div>           
+</header>            
 
 <main>
-<h2>Education: </h2> 
+<div class="spaceMain"><h2>Education: </h2> 
 <p class="spaceOne">Community College of Rhode Island</p>
 <p class="spaceOne">Warwick, RI</p><br>
-<p class="spaceTwo">Computer Science</p>
+<p class="spaceTwo"><strong>Computer Science</strong></p>
 <p class="spaceTwo">Transferring</p><br> 
  
 <p class="spaceThree">CUNY City College of New York</p>                                                 
-<p class="spaceThree">New York, NY</p><br> 
-<p class="spaceFour">General Studies</p> 
+<p class="spaceThree">New York, NY</p><br>
+<p class="spaceFour"><strong>General Studies</strong></p> 
 <p class="spaceFour">2009 - 2013</p><br> 
-<p class="spaceFive">3.0 collegiate GPA- obtaining 42 college credits while in High School</p>
+<p class="spaceFive">3.0 collegiate GPA- obtaining 42 college credits while in High School </p>
 
 <h2>Experience: </h2> 
-Dominos Pizza 
-<b><i>Delivery and Cashier</i></b>			                            January 2016 to August 2016 
+<p class="jobEmployer">Dominos Pizza</p> 
+<b><i>Delivery and Cashier</i></b>
+<p class="jobDate">January 2016 to August 2016</p> 
 <ul class="bulletSpace">
 <li>Carried out pizza as a delivery driver.</li> 
 <li>Prepared meals from the oven.</li> 
@@ -77,8 +78,9 @@ Dominos Pizza
 <li>Stocked inventory.</li> 
 </ul>
 
-LaSalle Bakery
-<b><i>Sales Associate; Barista</i></b> 					                  June 2015 to July 2015
+<p class="jobEmployer">LaSalle Bakery</p>
+<b><i>Sales Associate; Barista</i></b>
+<p class="jobDate">June 2015 to July 2015</p>
 <ul class="bulletSpace">
 <li>Handle POS and cash register.</li>
 <li>Prepare menu items.</li>
@@ -86,8 +88,9 @@ LaSalle Bakery
 <li>Provide outstanding service to all clients.</li>
 </ul>
 
-Emory & Henry College Kelly Library
-<b><i>Work-Study: Information Technology Help Desk Assistant</i></b> 	        August 2013 to May 2014
+<p class="jobEmployer">Emory & Henry College Kelly Library</p>
+<b><i>Work-Study: Information Technology Help Desk Assistant</i></b> 	        
+<p class="jobDate">August 2013 to May 2014</p>
 <ul class="bulletSpace">
 <li>Kept computers applications updated.</li>
 <li>Installed hardware and software computer setups in staff offices.</li>
@@ -106,6 +109,7 @@ Emory & Henry College Kelly Library
 <li>Active problem solver</li>
 <li>Proficient with Microsoft Office and Apple iWork.</li>
 </ul>
+</div>
 </main>
 
         </body>
