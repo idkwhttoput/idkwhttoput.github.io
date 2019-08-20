@@ -5,13 +5,15 @@ background-color: coral;
 padding: 10px;
 margin-bottom: 10px;
 width: 388.2px;
-float: right;
 margin: 2%;
 line-height: 500%;
-border: none;
+align-content: center;
+align-items: center;
+text-align: center;
+box-align: center;
 }
 
-nav:before{
+button:before {
     content: ' \2630';
 } 
 
@@ -21,90 +23,119 @@ nav a {
     margin: 0 20px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-align: center;
 }
 
 ul{
-    line-height: 2; 
+    line-height: 2;
 }
 
 img{
-    width: 388.2px;
-    height: 258.4px;
+  width: 388.2px;
+  height: 258.4px;
+}
+
+.imgView{
+  text-align: center;
 }
 
 .line{
     padding: 1px 0;
 }
 
+h1, h3 {
+    text-align: center;
+}
+h1{
+  font-size: 300%;
+}
 h2{
     padding: 10px;
 }
 
-h1, h3 {
-text-align: center;
-
-}
-main{
-margin-left: 20px;
-}
-
-.headingSpace{
-    line-height: 1px;
-}
-
-.spaceOne{
-    display: inline;
-    margin: 10px 20px 10px 20px;
-
-}
-
-.spaceTwo{
-display: inline;
-margin: 20px 140px 40px 20px;
-line-height: 50px;
-}
-
-.spaceThree{
-    display: inline;
-    margin: 10px 40px 10px 20px;
-}
-
-.spaceFour{
-    display: inline;
-    margin: 20px 155px 40px 20px;
-    line-height: 50px;
-}
-
-.spacefive{
-     
-}
-
 .bulletSpace{
-    margin: 35px;
-    margin-top:
+  margin-left: 50px;
 }
 
+p.spaceOne{
+display: inline-block;
+width: 15%;
+margin: 20px;
+margin-right: 200px;
+max-width: 5000px;
+}
+
+p.spaceTwo{
+display: inline-block;
+width: 15%;
+margin: 20px;
+margin-right: 200px;
+margin-bottom: 50px; 
+}
+
+p.spaceThree{
+display: inline-block;
+width: 15%;
+margin: 20px;
+margin-right: 200px;
+}
+    
+p.spaceFour{
+display: inline-block;
+width: 15%;
+margin: 20px; 
+margin-right: 200px; 
+}
+
+p.spaceFive{
+display: inline-block;
+margin: 20px; 
+margin-right: 200px;
+margin-top: 10px; 
+}
+
+div.spaceMain{
+  margin-left: 20px;
+}
+
+p.jobEmployer{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+p.jobDate{
+  display: inline-block;
+  margin-left: 20px;
+}
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #3498DB;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 100%;
+    width: 10%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-align: center;
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #2980B9;
   }
   
   .dropdown {
-    float: right;
     position: relative;
-    display: block;
-
-}
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-align: center;
+  }
   
   .dropdown-content {
     display: none;
@@ -113,8 +144,8 @@ line-height: 50px;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: 0;
     z-index: 1;
+    
   }
   
   .dropdown-content a {
@@ -122,13 +153,22 @@ line-height: 50px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+  
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
   
-  .show {display: block;}
-
-* {
-    box-sizing: border-box;
+  .show {
+    display: block;
 }
 
+.show:hover{
+    background: #ddd;
+}
+
+ 
+*{
+    box-sizing: border-box;
+}   
