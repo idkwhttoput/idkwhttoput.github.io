@@ -39,6 +39,7 @@ height: 258.4px;
   
 .imgView{
 text-align: center;
+  z-index: 3;
 }
   
 .line{
