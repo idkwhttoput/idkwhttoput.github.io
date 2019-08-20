@@ -130,12 +130,5 @@ line-height: 50px;
 
 * {
     box-sizing: border-box;
-    outline: 2px solid red;
-}
-
-html {
-    background-image: linear-gradient( white 50%, rgb(16, 170, 221));
-    height:200%;
-    background-image: linear-gradient( to right white, rgb(16, 170, 221));
 }
 
