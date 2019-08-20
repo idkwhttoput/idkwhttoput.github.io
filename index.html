@@ -3,42 +3,74 @@
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>My website</title>
-        <link rel = 'stylesheet' href = 'stylesheet2.css'> 
+        <title>My Resume Website</title>
+        <link rel = 'stylesheet' href = 'stylesheet.css'> 
         <link rel="icon" href="C:\Users\pctapresentation\Desktop\perezesteban-resume\img\favicon.jpg">
     </head>        
         <body>
-
-<nav>
-
-<a href="C:\Users\pctapresentation\Desktop\perezesteban-resume\assets\print cv.pdf">View PDF Resume</a>
-<a href="estebanperez.github.io">GitHub</a>
-<a href="mailto:esteban_p@live.com">Send Email</a>
-
-</nav> 
+          
+<header>
 
 <img src="C:\Users\pctapresentation\Desktop\perezesteban-resume\img\christopher-gower-m_HRfLhgABo-unsplash.jpg" alt= "Computer coding"  title="Computer coding"> 
 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">LINKS</button>
+  <div id="myDropdown" class="dropdown-content">
+    <nav>
+    <a href="C:\Users\pctapresentation\Desktop\perezesteban-resume\assets\print cv.pdf" target="_blank">View PDF Resume</a>
+    <a href="estebanperez.github.io" target="_blank">GitHub</a>
+    <a href="mailto:esteban_p@live.com" target="_blank">Send Email</a>
+   </nav>
+  </div>
+
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</header> 
+
+<div class="headingSpace">
 <h1> Esteban A. Perez</h1>
 <h3> <a href="tel:401-451-7490">401-451-7490</a>| <a href="mailto:esteban_p@live.com">esteban_p@live.com</a> </h3>
-            
-               
+</div>           
+
+<main>
 <h2>Education: </h2> 
-<h4 class="line">Community College of Rhode Island </h4>
-<p>Warwick, RI <br>
-Computer Science<br>
-Transferring</p> 
+<p class="spaceOne">Community College of Rhode Island</p>
+<p class="spaceOne">Warwick, RI</p><br>
+<p class="spaceTwo">Computer Science</p>
+<p class="spaceTwo">Transferring</p><br> 
  
-<h4 class="line">CUNY City College of New York </h4>                                                 
-<p>New York, NY<br> 
-General Studies<br> 
-2009 - 2013<br> 
-3.0 collegiate GPA- obtaining 42 college credits while in High School </p>
+<p class="spaceThree">CUNY City College of New York</p>                                                 
+<p class="spaceThree">New York, NY</p><br> 
+<p class="spaceFour">General Studies</p> 
+<p class="spaceFour">2009 - 2013</p><br> 
+<p class="spaceFive">3.0 collegiate GPA- obtaining 42 college credits while in High School</p>
 
 <h2>Experience: </h2> 
 Dominos Pizza 
 <b><i>Delivery and Cashier</i></b>			                            January 2016 to August 2016 
-<ul>
+<ul class="bulletSpace">
 <li>Carried out pizza as a delivery driver.</li> 
 <li>Prepared meals from the oven.</li> 
 <li>Placed orders through POS for clients.</li> 
@@ -47,7 +79,7 @@ Dominos Pizza
 
 LaSalle Bakery
 <b><i>Sales Associate; Barista</i></b> 					                  June 2015 to July 2015
-<ul>
+<ul class="bulletSpace">
 <li>Handle POS and cash register.</li>
 <li>Prepare menu items.</li>
 <li>Sanitize and follow restaurant’s safety regulations.</li>
@@ -56,7 +88,7 @@ LaSalle Bakery
 
 Emory & Henry College Kelly Library
 <b><i>Work-Study: Information Technology Help Desk Assistant</i></b> 	        August 2013 to May 2014
-<ul>
+<ul class="bulletSpace">
 <li>Kept computers applications updated.</li>
 <li>Installed hardware and software computer setups in staff offices.</li>
 <li>Assisted with students Wi-Fi network connections.</li>
@@ -65,7 +97,7 @@ Emory & Henry College Kelly Library
 </ul>
 
 <h2>Strengths: </h2>
-<ul>
+<ul class="bulletSpace">
 <li>Fluent in Spanish and English</li>
 <li>Professional sales experience</li>
 <li>Detail oriented</li>
@@ -74,6 +106,7 @@ Emory & Henry College Kelly Library
 <li>Active problem solver</li>
 <li>Proficient with Microsoft Office and Apple iWork.</li>
 </ul>
+</main>
 
         </body>
 </html>
