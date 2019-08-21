@@ -181,3 +181,13 @@ text-align: center;
   *{
       box-sizing: border-box;
   }   
+
+
+  @media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  html{
+    background: #ff7f50
+  } 
+}
