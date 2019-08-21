@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width">
         <title>My Resume Website</title>
         <link rel = 'stylesheet' href = 'stylesheet.css' type="text/css"> 
-        <link rel="icon" href="estebanperez-resume/logo.png">
+        <link rel="icon" href="..\html img\logo.png">
     </head>        
-        <body>
+<body>
           
-<header>
+<header class="gradient">
 
 <div class="imgView">
-  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt= "Computer coding"  title="Computer coding"> 
+  <img src="..\html img\christopher-gower-m_HRfLhgABo-unsplash.jpg" alt= "Computer coding"  title="Computer coding"> 
 </div>
 
 <div class="dropdown">
@@ -21,7 +21,7 @@
     <nav>
 
       <a href="resume.pdf" target="_blank">View as PDF</a>
-      <a href="estebanperez-resume/resume.png" target="_blank">View as Image</a>
+      <a href="..\html img\resume.png" target="_blank">View as Image</a>
       <a href="https://idkwhttoput.github.io" target="_blank">GitHub</a>
       <a href="mailto:esteban_p@live.com" target="_blank">Send me an Email</a>
       
@@ -50,12 +50,13 @@ window.onclick = function(event) {
   }
 }
 </script>
+</header> 
 
-<h1> Esteban A. Perez</h1>
-<h3> <a href="tel:401-451-7490"> Click to call 401-451-7490</a>| <a href="mailto:esteban_p@live.com">esteban_p@live.com</a> </h3>
-</header>            
 
 <main>
+    <h1> Esteban A. Perez</h1>
+    <h3> <a href="tel:401-451-7490">Click to call 401-451-7490</a>| <a href="mailto:esteban_p@live.com">esteban_p@live.com</a> </h3>
+               
 <h2>Education: </h2> 
 <p class="spaceOne">Community College of Rhode Island</p>
 <p class="spaceOne">Warwick, RI</p><br>
@@ -112,10 +113,33 @@ window.onclick = function(event) {
 </ul>
 
 </main>
+<hr>
 
+<section>
+    <h2>Send me a message</h2>  
+      <form action="mailto:esteban_p@live.com"> 
+      <fieldset>
+        <legend>Your Information</legend>
+          <label>Name</label>
+          <input type="text" required placeholder="Enter your name..."><br>
+          <label>Email</label>        
+          <input type="email" required placeholder="Enter your email..."><br>
+          <label>Send me a document</label>
+          <input type="file"><br>
+          <label>Your message</label><br>
+          <input type="text"><br>
+      <input type="submit" class="button">
+  </fieldset>  
+  
+  
+  </form>
+  
+  </section>
 </body>
 
 <footer>
 <p>Created by Esteban Perez.</p>
 </footer>
+
+
 </html>
