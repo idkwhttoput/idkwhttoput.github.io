@@ -1,15 +1,20 @@
+main{
+    display: flex;
+    justify-content: flex-start;
+}
+
 .card1{
     height: 200px;
     width: 200px;
     background: rgba(4, 4, 245, 0.479);
-    display: inline-block;
+    
 }
 
 .card2{
     height: 200px;
     width: 200px;
     background: rgba(255, 0, 0, 0.452);
-    display: inline-block;
+
     margin-left: 0px;
 }
 
