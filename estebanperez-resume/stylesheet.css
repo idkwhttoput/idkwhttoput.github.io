@@ -184,8 +184,8 @@ text-align: center;
 
 
   @media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
+  and (max-width: 320px) 
+  and (max-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
   html{
     background: #ff7f50
