@@ -1,11 +1,25 @@
-.blueCard{
+.card1{
     height: 200px;
     width: 200px;
     background: rgba(4, 4, 245, 0.479);
+    display: inline-block;
 }
 
-.redCard{
+.card2{
     height: 200px;
     width: 200px;
     background: rgba(255, 0, 0, 0.452);
+    display: inline-block;
+    margin-left: 0px;
+}
+
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+div h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;  
 }
