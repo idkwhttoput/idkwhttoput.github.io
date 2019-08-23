@@ -15,6 +15,10 @@ box-align: center;
 button:before {
 content: ' \2630';
 } 
+
+.callMe:before {
+  content: ' \260E'
+}
   
   
 nav a {
@@ -57,6 +61,11 @@ text-align: center;
   }
   main{
    margin: 30px;
+  }
+
+  .gradient{
+  background-image: linear-gradient(to right #3498DB 100%);
+  z-index: 2;
   }
 
   footer{
@@ -181,4 +190,4 @@ text-align: center;
   *{
       box-sizing: border-box;
   }   
-
+ 
