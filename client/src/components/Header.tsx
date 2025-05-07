@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useMobile } from "@/hooks/use-mobile";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`fixed w-full bg-white bg-opacity-95 z-50 transition-shadow ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
+    <header className={`fixed w-full bg-white dark:bg-gray-900 bg-opacity-95 dark:bg-opacity-95 z-50 transition-shadow ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -42,30 +43,34 @@ export default function Header() {
           </a>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
             {navItems.map((item) => (
               <a 
                 key={item.label}
                 href={item.href} 
-                className="text-gray-700 hover:text-primary font-medium transition-colors"
+                className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors"
               >
                 {item.label}
               </a>
             ))}
+            <ThemeToggle />
           </nav>
           
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-gray-700 focus:outline-none" 
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          {/* Mobile Menu Button and Theme Toggle */}
+          <div className="flex items-center space-x-2 md:hidden">
+            <ThemeToggle />
+            <button 
+              className="text-gray-700 dark:text-gray-200 focus:outline-none" 
+              onClick={toggleMobileMenu}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
         
         {/* Mobile Navigation */}
@@ -75,7 +80,7 @@ export default function Header() {
               <a 
                 key={item.label}
                 href={item.href} 
-                className="text-gray-700 hover:text-primary font-medium transition-colors"
+                className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors"
                 onClick={closeMobileMenu}
               >
                 {item.label}
