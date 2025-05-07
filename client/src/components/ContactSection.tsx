@@ -89,10 +89,10 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-50 section-transition">
+    <section id="contact" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800 section-transition">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Get In Touch</h2>
-        <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800 dark:text-white">Get In Touch</h2>
+        <p className="text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto mb-16">
           Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
         </p>
         
@@ -105,12 +105,12 @@ export default function ContactSection() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel className="text-gray-700 dark:text-gray-200">Name</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="Your name" 
                           {...field}
-                          className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                          className="px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
                         />
                       </FormControl>
                       <FormMessage />
@@ -123,13 +123,13 @@ export default function ContactSection() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="text-gray-700 dark:text-gray-200">Email</FormLabel>
                       <FormControl>
                         <Input 
                           type="email" 
                           placeholder="Your email address" 
                           {...field}
-                          className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                          className="px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
                         />
                       </FormControl>
                       <FormMessage />
@@ -142,12 +142,12 @@ export default function ContactSection() {
                   name="subject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Subject</FormLabel>
+                      <FormLabel className="text-gray-700 dark:text-gray-200">Subject</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="Subject of your message" 
                           {...field}
-                          className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                          className="px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
                         />
                       </FormControl>
                       <FormMessage />
@@ -160,13 +160,13 @@ export default function ContactSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel className="text-gray-700 dark:text-gray-200">Message</FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder="Your message" 
                           {...field}
                           rows={5}
-                          className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                          className="px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
                         />
                       </FormControl>
                       <FormMessage />
@@ -186,8 +186,8 @@ export default function ContactSection() {
           </div>
           
           <div className="w-full md:w-1/2">
-            <div className="bg-white p-8 rounded-lg shadow-md h-full">
-              <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+            <div className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md h-full">
+              <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-white">Contact Information</h3>
               
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
@@ -196,15 +196,15 @@ export default function ContactSection() {
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-medium text-gray-800">{info.title}</h4>
-                      <p className="text-gray-600">{info.content}</p>
+                      <h4 className="font-medium text-gray-800 dark:text-white">{info.title}</h4>
+                      <p className="text-gray-600 dark:text-gray-300">{info.content}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
               <div className="mt-10">
-                <h4 className="font-medium text-gray-800 mb-4">Follow Me</h4>
+                <h4 className="font-medium text-gray-800 dark:text-white mb-4">Follow Me</h4>
                 <div className="flex space-x-4">
                   {socialLinks.map((link, index) => (
                     <a 
@@ -212,7 +212,7 @@ export default function ContactSection() {
                       href={link.href} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-gray-600 hover:text-primary transition-colors"
+                      className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
                       aria-label={link.label}
                     >
                       {link.icon}
@@ -225,7 +225,7 @@ export default function ContactSection() {
                 <img 
                   src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
                   alt="San Francisco map" 
-                  className="w-full h-auto" 
+                  className="w-full h-auto border border-gray-200 dark:border-gray-600" 
                 />
               </div>
             </div>

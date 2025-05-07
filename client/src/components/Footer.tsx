@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Footer() {
   const navLinks = [
@@ -37,7 +38,7 @@ export default function Footer() {
             ))}
           </div>
           
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 items-center">
             {socialLinks.map((link, index) => (
               <a 
                 key={index}
@@ -50,6 +51,9 @@ export default function Footer() {
                 {link.icon}
               </a>
             ))}
+            <div className="ml-2 text-gray-300">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
         
