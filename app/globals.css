@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-sans: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Iowan Old Style, Baskerville, "Times New Roman", serif;
+}
+:root.dark { color-scheme: dark; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { margin: 0; background: #f6f5f0; color: #20201e; }
+* { box-sizing: border-box; }
+::selection { background: #d7ff64; color: #20201e; }
+
+.grid-noise {
+  background-image: linear-gradient(rgba(30,30,28,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(30,30,28,.055) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+.dark .grid-noise {
+  background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+}
+.text-balance { text-wrap: balance; }
+.display { letter-spacing: -.055em; line-height: .95; }
+.marquee-track { animation: marquee 24s linear infinite; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+}
